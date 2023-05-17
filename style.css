@@ -1,0 +1,30 @@
+.bg-image {
+    background-image: url("./asset/atistic.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 480px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.three-dot {
+    width: 20px;
+    height: 20px;
+}
+.nav-links {
+    gap: 2rem;
+}
+
+.container-wapper {
+    width: 980px;
+}
+
+.mt-180 {
+    margin-top: 180px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
