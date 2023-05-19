@@ -85,3 +85,32 @@
 .zmdi.contact-icon {
     font-size: 50px;
 }
+
+.card {
+    width: 33.33%;
+    padding: 15px;
+    transition: 1s ease-in;
+    overflow: hidden;
+}
+
+.ball {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 900px) {
+    .card  {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 899px) {
+    .container-wapper {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

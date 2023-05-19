@@ -17,10 +17,10 @@
             <header class="flex items-center fixed container-wapper justify-between bg-[#fff] p-4 z-10">
                 <h1 class="text-2xl text-[#444444] font-bold">Isaiah Peter</h1>
                 <div class="flex items-center nav-links">
-                    <ul class="nav-links text-[#5d5d5d] flex items-center">
+                    <ul class="nav-links text-[#5d5d5d] hidden items-center md:flex">
                         <li><a class="hover:text-[#2bd16f]" href="#">About</a></li>
                         <li><a class="hover:text-[#2bd16f]" href="#">Portfolio</a></li>
-                        <li><a class="hover:text-[#2bd16f]" href="#">Intrest</a></li>
+                        <li><a class="hover:text-[#2bd16f]" href="#">Interest</a></li>
                         <li><a class="hover:text-[#2bd16f]" href="#">Project</a></li>
                         <li><a class="hover:text-[#2bd16f]" href="#">Contact</a></li>
                     </ul>
@@ -30,7 +30,7 @@
                 </div>
             </header>
 
-            <div class="flex bg-[#fff] mt-180 p-12 relative rounded drop-shadow-xl mb-30">
+            <div class="flex flex-col bg-[#fff] md:flex-row items-center md-items-start mt-180 p-12 relative rounded drop-shadow-xl mb-30">
                 <div class="flex flex-col ml-12">
                     <img src="./asset/isaiah.jpeg" alt class="isaiah"/>
                     <div class="logos flex items-center social">
@@ -61,7 +61,7 @@
             <div class="mb-30">
                 <h1 class="text-2xl mb-30">What I Do</h1>
 
-                <div class="grid grid-cols-3 gap-7">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-7">
                     <div class="flex items-center flex-col bg-[#fff] rounded-lg py-10 px-6">
                         <i class="fa-solid fa-code card-icon text-[#2879ff] mb-4"></i>
                         <h2 class="mb-4 text-[#444] text-lg">Developer</h2>
@@ -83,7 +83,7 @@
 
             <div class="mb-30">
                 <h1 class="text-2xl mb-30">Interest</h1>
-                <div class="flex items-center flex-warp gap-6">
+                <div class="flex items-center flex-wrap gap-6">
                     <div class="flex flex-col items-center p-10 bg-[#fff] drop-shodow-lg">
                         <i class="fa-solid fa-tv interest-icon mb-3" ></i>
                         <h2>Movies</h2>
@@ -105,6 +105,138 @@
 
             <div class="mb-30">
                 <h1 class="text-2xl mb-30">Projects And Work</h1>
+                <div class="repocards flex flex-wrap">
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/e-commerce-backend"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="ball bg-[#00add8]"></div>
+                                <h4>Golang</h4>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">ecommrce-backend</a>
+
+                            <p class="md-4">An ecommerce website that allow user to buy product</p>
+                        </div>
+                    </div>
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/ecommrce-frontend"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="ball bg-[#f1e05a]"></div>
+                                <h4>Javascript</h4>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">ecommrce-frontend</a>
+
+                            <p class="md-4">An ecommerce website that allow user to buy product</p>
+                        </div>
+                    </div>
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/posts-backend"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="ball bg-[#00add8]"></div>
+                                <h4>Golang</h4>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">social-ground-app backend</a>
+
+                            <p class="md-4">User can create account, create post get the post, add friends and chat with them</p>
+                        </div>
+                    </div>
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/social-ground-app"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="ball bg-[#f1e05a]"></div>
+                                <h4>Javascript</h4>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">social-ground-app</a>
+
+                            <p class="md-4">This in a model of facebook where user can post, add new friend and chat with them real time</p>
+                        </div>
+                    </div>
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/e-com"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex flex-col gap-0.5 mb-4">
+                                <div class="flex items-center gap-2">
+                                    <div class="ball bg-[#e34c26]"></div>
+                                    <h4>HTML</h4>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="ball bg-[#f1e05a]"></div>
+                                    <h4>Javascript</h4>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="ball bg-[#3572a5]"></div>
+                                    <h4>Python</h4>
+                                </div>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">e-com</a>
+
+                            <p class="md-4">Alx final project. User can register as a seller or buy</p>
+                        </div>
+                    </div>
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/movies-app"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="ball bg-[#f1e05a]"></div>
+                                <h4>Javascript</h4>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">movies-app</a>
+
+                            <p class="md-4">It a Movies app that return list of movies from themoviesapi</p>
+                        </div>
+                    </div>
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/netfley"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="ball bg-[#f1e05a]"></div>
+                                <h4>Javascript</h4>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">netfley</a>
+
+                            <p class="md-4">A clone of netflex</p>
+                        </div>
+                    </div>
+                    <div class="card text-[gray] flex flex-col">
+                        <div class="image">
+                            <img src="https://opengraph.githubassets.com/f/Isaiah-peter/netfley-backend"  style="width: 100%;"/>
+                        </div>
+                        <div class="flex flex-col bg-[#fff] p-4">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="ball bg-[#00add8]"></div>
+                                <h4>Golang</h4>
+                            </div>
+
+                            <a href="#" class="text-lg text-[#444] mb-4 capitalize">netfley-backend</a>
+
+                            <p class="md-4">A clone of netflex</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="mb-30">
