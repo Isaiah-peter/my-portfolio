@@ -110,6 +110,10 @@
         width: 100%;
     }
 
+    .main-body {
+        padding: 0 10px;
+    }
+
     .card {
         width: 100%;
     }
