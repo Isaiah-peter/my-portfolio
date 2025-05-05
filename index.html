@@ -17,21 +17,21 @@
             <header class="flex items-center fixed container-wapper justify-between bg-[#fff] p-4 z-10">
                 <h1 class="text-2xl text-[#444444] font-bold">Isaiah Peter</h1>
                 <div class="flex items-center nav-links">
-                    <ul class="nav-links text-[#5d5d5d] hidden items-center md:flex">
-                        <li><a class="hover:text-[#2bd16f]" href="#">About</a></li>
-                        <li><a class="hover:text-[#2bd16f]" href="#">Portfolio</a></li>
-                        <li><a class="hover:text-[#2bd16f]" href="#">Interest</a></li>
-                        <li><a class="hover:text-[#2bd16f]" href="#">Project</a></li>
-                        <li><a class="hover:text-[#2bd16f]" href="#">Contact</a></li>
+                    <ul id="header" class="nav-links text-[#5d5d5d] items-center smalnav md:flex">
+                        <li><a class="hover:text-[#2bd16f]" href="#about" onclick="toggleBtn()">About</a></li>
+                        <li><a class="hover:text-[#2bd16f]" href="#portfolio" onclick="toggleBtn()">Portfolio</a></li>
+                        <li><a class="hover:text-[#2bd16f]" href="#interest" onclick="toggleBtn()">Interest</a></li>
+                        <li><a class="hover:text-[#2bd16f]" href="#project" onclick="toggleBtn()">Project</a></li>
+                        <li><a class="hover:text-[#2bd16f]" href="#contact" onclick="toggleBtn()">Contact</a></li>
                     </ul>
-                    <div class="p-1 hover:bg-[#ececec] rounded-full">
-                        <img src="./asset/three-dot.svg" alt class="rotate-90 three-dot"/>
+                    <div class="p-1 hover:bg-[#ececec] rounded-full md:hidden">
+                        <img src="./asset/three-dot.svg" alt class="rotate-90 three-dot" onclick="toggleBtn()"/>
                     </div>
                 </div>
             </header>
 
             <div class="main-body">
-                <div class="flex flex-col bg-[#fff] md:flex-row items-center md-items-start mt-180 p-12 relative rounded drop-shadow-xl mb-30">
+                <div id="about" class="flex flex-col bg-[#fff] md:flex-row items-center md-items-start mt-180 p-12 relative rounded drop-shadow-xl mb-30">
                     <div class="flex flex-col md:ml-12 sm:ml-0">
                         <img src="./asset/isaiah.jpeg" alt class="isaiah min-w-[230px]"/>
                         <div class="logos flex items-center social">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
     
-                <div class="mb-30">
+                <div id="portfolio" class="mb-30">
                     <h1 class="text-2xl mb-30">What I Do</h1>
     
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-7">
@@ -81,7 +81,7 @@
     
                 </div>
     
-                <div class="mb-30">
+                <div id="interest" class="mb-30">
                     <h1 class="text-2xl mb-30">Interest</h1>
                     <div class="flex items-center flex-wrap gap-6">
                         <div class="flex flex-col items-center p-10 bg-[#fff] drop-shodow-lg">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
     
-                <div class="mb-30">
+                <div id="project" class="mb-30">
                     <h1 class="text-2xl mb-30">Projects And Work</h1>
                     <div class="repocards flex flex-wrap">
                         <div class="card text-[gray] flex flex-col">
@@ -256,5 +256,15 @@
             </div>
         </div>
     </main>
+    <script>
+        function toggleBtn() {
+            const header = document.getElementById('header');
+            if (header.style.display === 'none' || header.style.display === '') {
+                header.style.display = 'flex';
+            } else {
+                header.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

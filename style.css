@@ -117,4 +117,18 @@
     .card {
         width: 100%;
     }
+
+    .smalnav {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        height: 36vh;
+        width: 100%;
+        background: white;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
